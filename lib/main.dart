@@ -3,6 +3,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
+import 'package:short_video_app/constant.dart';
+import 'package:short_video_app/views/screens/auth/login_screen.dart';
 
 void main() => runApp(
   DevicePreview(
@@ -21,7 +23,11 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home: const Text("Hello"),
+      title: "TikTok Clone",
+      theme: ThemeData.dark().copyWith(
+        scaffoldBackgroundColor: backgroundColor,
+      ),
+      home: const LoginScreen(),
     );
   }
 }
