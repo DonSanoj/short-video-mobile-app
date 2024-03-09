@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:short_video_app/constant.dart';
 import 'package:short_video_app/views/screens/auth/login_screen.dart';
+import 'package:short_video_app/views/screens/auth/singup_screen.dart';
 
 void main() => runApp(
   DevicePreview(
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: backgroundColor,
       ),
-      home: const LoginScreen(),
+      home: SignUpScreen(),
     );
   }
 }
